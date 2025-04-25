@@ -13,11 +13,11 @@ if st.button("calculate"):
             st.info(f"ตำกว่าเกณฑ์")
             st.warning("เสี่ยงขาดสารอาหาร")
             st.image("0.png")
-         elif bmi< 22.9:
+         elif bmi< 23:
             st.success(f"สมส่วน")
             st.success("โรคเเทรกซ้อนน้อย")
             st.image("1.png")
-         elif bmi< 24.9:
+         elif bmi< 25:
             st.warning(f"เกินมาตรฐาน")
             st.warning("นำหนักเกิน")
             st.image("2.png")
@@ -34,15 +34,15 @@ if st.button("calculate"):
             st.info(f"ตำกว่าเกณฑ์")
             st.warning("เสี่ยงขาดสารอาหาร")
             st.image("1.1.png")
-         elif bmi< 23.9:
+         elif bmi< 24:
             st.success(f"สมส่วน")
             st.success("โรคเเทรกซ้อนน้อย")
             st.image("1.2.png")
-         elif bmi< 25.9:
+         elif bmi< 26:
             st.warning(f"เกินมาตรฐาน")
             st.warning("นำหนักเกิน")
             st.image("1.3.png")
-         elif bmi< 29.9:
+         elif bmi< 30:
             st.warning(f"อ้วน")
             st.error("นำหนักเกินมาก ระยะอ้วนเริ่มต้น")
             st.image("1.4.png")
