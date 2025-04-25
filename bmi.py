@@ -17,15 +17,15 @@ if st.button("calculate"):
             st.success(f"สมส่วน")
             st.success("โรคเเทรกซ้อนน้อย")
             st.image("1.png")
-         elif bmi< 25:
+        elif bmi< 25:
             st.warning(f"เกินมาตรฐาน")
             st.warning("นำหนักเกิน")
             st.image("2.png")
-         elif bmi< 30:
+        elif bmi< 30:
             st.warning(f"อ้วน")
             st.error("นำหนักเกินมาก ระยะอ้วนเริ่มต้น")
             st.image("3.png")
-         else:
+        else:
             st.error(f"อ้วนมาก")
             st.error("โรคอ้วน")
             st.image("4.png")
