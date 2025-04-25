@@ -1,15 +1,15 @@
 import streamlit as st
- st.title("BMI Calculation")
- st.image("bmi.png")
- st.markdown("---")
- sex=st.radio("เพศ",("ชาย","หญิง"),horizontal=True)
- kg=st.number_input("น้ำหนัก:",value=40.0,min_value=5.0,max_value=200.0)
- cm=st.number_input("ความสูง:",value=140.0,min_value=10.0,max_value=200.0)
- if st.button("calculate"):
-     bmi=kg/(cm/100)**2
-     if sex=="หญิง":
-         st.subheader(f"your bmi is {bmi:.1f}")
-         if bmi< 18:
+st.title("BMI Calculation")
+st.image("bmi.png")
+st.markdown("---")
+sex=st.radio("เพศ",("ชาย","หญิง"),horizontal=True)
+kg=st.number_input("น้ำหนัก:",value=40.0,min_value=5.0,max_value=200.0)
+cm=st.number_input("ความสูง:",value=140.0,min_value=10.0,max_value=200.0)
+if st.button("calculate"):
+    bmi=kg/(cm/100)**2
+    if sex=="หญิง":
+        st.subheader(f"your bmi is {bmi:.1f}")
+        if bmi< 18:
             st.info(f"ตำกว่าเกณฑ์")
             st.warning("เสี่ยงขาดสารอาหาร")
             st.image("0.png")
