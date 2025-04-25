@@ -29,7 +29,7 @@ if st.button("calculate"):
             st.error(f"อ้วนมาก")
             st.error("โรคอ้วน")
             st.image("4.png")
-        else:
+    else:
             if bmi< 19:
                 st.info(f"ตำกว่าเกณฑ์")
                 st.warning("เสี่ยงขาดสารอาหาร")
