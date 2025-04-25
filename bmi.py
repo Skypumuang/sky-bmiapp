@@ -13,7 +13,7 @@ if st.button("calculate"):
             st.info(f"ตำกว่าเกณฑ์")
             st.warning("เสี่ยงขาดสารอาหาร")
             st.image("0.png")
-         elif bmi< 23:
+        elif bmi< 23:
             st.success(f"สมส่วน")
             st.success("โรคเเทรกซ้อนน้อย")
             st.image("1.png")
